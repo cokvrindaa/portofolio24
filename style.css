@@ -1,0 +1,415 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* Font Popins */
+body {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary: rgb(4, 70, 176);
+}
+span {
+  color: var(--primary);
+  font-weight: bold;
+}
+/* Navbar */
+.navbar {
+  padding: 30px 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: white;
+}
+.navbar .navbar-logo {
+  font-weight: bold;
+  font-size: 40px;
+  font-style: italic;
+}
+.navbar .navbar-logo span {
+  font-weight: bold;
+  font-size: 40px;
+  font-style: italic;
+  color: var(--primary);
+}
+.navbar .navbar-tengah a {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+}
+
+.beranda {
+  padding: 30px 3%;
+  height: 90vh;
+}
+.beranda .porfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 13%;
+}
+.beranda .porfil .teks p {
+  font-size: 30px;
+}
+.beranda .porfil .teks {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 800px;
+}
+.beranda .porfil .teks h1 {
+  font-size: 50px;
+}
+.beranda .porfil .nama {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beranda .porfil .teks .ikon {
+  font-size: 30px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Agar ikon berada di tengah */
+  gap: 15px;
+}
+
+.fa-instagram {
+  transition: 0.4s;
+}
+.fa-instagram:hover {
+  color: var(--primary);
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.fa-github {
+  transition: 0.4s;
+}
+.fa-tiktok {
+  transition: 0.4s;
+}
+.fa-tiktok:hover {
+  color: var(--primary);
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.fa-github:hover {
+  color: var(--primary);
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.nama .typed-cursor {
+  font-size: 50px; /* Sesuaikan dengan ukuran teks */
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.beranda .porfil img {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  margin-right: 30px;
+}
+
+/* Tentang */
+.tentang {
+  height: 100vh; /* Mengisi seluruh tinggi layar */
+  display: flex;
+  flex-direction: column; /* Mengatur elemen agar ditumpuk secara vertikal */
+  justify-content: center; /* Mengatur agar elemen berada di tengah secara vertikal */
+  align-items: center; /* Mengatur agar elemen berada di tengah secara horizontal */
+  padding: 30px 3%;
+}
+
+.judultentang {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 40px; /* Menambah jarak antara judul dan konten utama */
+}
+
+.isitentang {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Membuat jarak antara gambar dan teks */
+  gap: 50px; /* Menambah jarak antar elemen gambar dan teks */
+}
+
+.tentang img {
+  width: 400px;
+  height: 400px;
+  border-radius: 20%; /* Mengubah gambar menjadi lingkaran */
+  object-fit: cover; /* Agar gambar tidak terdistorsi */
+}
+
+.tekstentang {
+  text-align: justify;
+  max-width: 1000px;
+}
+.tekstentang p {
+  font-size: 25px;
+}
+.tekstentang h2 {
+  font-size: 40px;
+}
+/* skil */
+.skil {
+  height: 100vh; /* Mengisi seluruh tinggi layar */
+  padding: 30px 3%;
+  display: flex;
+  flex-direction: column; /* Mengatur elemen agar ditumpuk secara vertikal */
+  justify-content: center; /* Mengatur agar elemen berada di tengah secara vertikal */
+}
+.judulskil {
+  font-size: 60px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.judulskila {
+  font-size: 50px;
+  margin-top: 30px;
+}
+.judulskilb {
+  font-size: 50px;
+  margin-top: 30px;
+  text-align: right;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+.logos-slide img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.logos-slide img {
+  transition: 0.4s;
+}
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+
+.logos-slide img {
+  padding-top: 50px;
+
+  height: 140px;
+  margin: 0 100px;
+}
+
+.swiper {
+  margin-top: 50px;
+  width: 50%;
+  height: 24%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column; /* Mengatur elemen agar ditumpuk secara vertikal */
+  justify-content: center; /* Mengatur agar elemen berada di tengah secara vertikal */
+  align-items: center;
+}
+.quote .isiquote p {
+  font-size: 30px;
+  text-align: center;
+}
+#menu {
+  display: none;
+}
+/* Responsiv */
+
+/* Laptop Normal */
+@media (max-width: 1440px) {
+  #menu {
+    display: none;
+  }
+  .beranda .porfil .teks h1 {
+    font-size: 45px;
+  }
+  .beranda .porfil .teks p {
+    font-size: 30px;
+  }
+  .beranda .porfil img {
+    width: 380px;
+    height: 380px;
+    border-radius: 100%;
+    margin-right: 30px;
+  }
+  /* Tentang */
+  .tekstentang {
+    text-align: justify;
+    max-width: 800px;
+  }
+  .tentang img {
+    width: 380px;
+    height: 380px;
+    border-radius: 20%; /* Mengubah gambar menjadi lingkaran */
+    object-fit: cover; /* Agar gambar tidak terdistorsi */
+  }
+  .tekstentang p {
+    font-size: 23px;
+  }
+  .tekstentang h2 {
+    font-size: 38px;
+  }
+  /* Quote */
+  .quote .isiquote p {
+    font-size: 28px;
+    text-align: center;
+  }
+  .swiper {
+    margin-top: 50px;
+    width: 50%;
+    height: 30%;
+  }
+}
+@media (max-width: 500px) {
+  /* Navbar */
+  .navbar .navbar-tengah a {
+    display: none;
+  }
+  /* Beranda */
+  .beranda .porfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13%;
+    flex-direction: column;
+  }
+  .beranda .porfil .teks p {
+    font-size: 25px;
+  }
+  .beranda .porfil .teks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 600px;
+    margin-top: 10px;
+  }
+  .beranda .porfil .teks h1 {
+    font-size: 40px;
+  }
+  .beranda .porfil .nama {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .beranda .porfil img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin: 0;
+  }
+  .beranda .porfil .teks .ikon {
+    font-size: 25px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Agar ikon berada di tengah */
+    gap: 15px;
+  }
+  /* Tentang */
+  .tentang {
+    height: 100vh; /* Mengisi seluruh tinggi layar */
+    display: flex;
+    flex-direction: column; /* Mengatur elemen agar ditumpuk secara vertikal */
+    justify-content: center; /* Mengatur agar elemen berada di tengah secara vertikal */
+    align-items: center; /* Mengatur agar elemen berada di tengah secara horizontal */
+    padding: 30px 3%;
+  }
+
+  .judultentang {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px; /* Menambah jarak antara judul dan konten utama */
+  }
+
+  .isitentang {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .tentang img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%; /* Mengubah gambar menjadi lingkaran */
+    object-fit: cover; /* Agar gambar tidak terdistorsi */
+  }
+
+  .tekstentang {
+    text-align: justify;
+    max-width: 315px;
+  }
+  .tekstentang p {
+    font-size: 18px;
+  }
+  .tekstentang h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}

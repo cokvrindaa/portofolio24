@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1897315b86.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-logo">
+        <p><span>Me?</span></p>
+      </div>
+      <div class="navbar-tengah">
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#skil">Skil</a>
+        <i data-feather="moon" id="modegelap" onclick="klikmodegelap()"></i>
+        <i data-feather="sun" id="modeterang" onclick="klikmodeterang()"></i>
+      </div>
+      <i data-feather="menu" id="menu"></i>
+    </nav>
+    <nav class="dropdown" id="dropdown">
+      <div class="isidropdown">
+        <a href="index.html">Pengertian</a>
+        <a href="Transprortasi.html">Transprotasi</a>
+        <div class="isidropdown-mode">
+          <i data-feather="moon" id="modegelap" onclick="klikmodegelap()"></i>
+          <i data-feather="sun" onclick="klikmodeterang()"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- Beranda -->
+    <div class="beranda" id="beranda" data-aos="zoom-in-down">
+      <div class="porfil">
+        <img src="foto.jpg" alt="" class="foto" />
+        <div class="teks">
+          <p>Hallo 👋, <span>saya</span></p>
+          <div class="nama">
+            <h1 id="typed-name"></h1>
+            <div class="typed-cursor"></div>
+          </div>
+          <p>baru belajar mengenai pengembangan web.</p>
+          <div class="ikon">
+            <i class="fa-brands fa-instagram" onclick="iglink()"></i>
+            <i class="fa-brands fa-tiktok" onclick="tiktoklink()"></i>
+            <i class="fa-brands fa-github" onclick="githublink()"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tentang -->
+    <div class="tentang" id="tentang" data-aos="zoom-in-down">
+      <h1 class="judultentang">Tentang <span>saya.</span></h1>
+      <div class="isitentang">
+        <img src="foto.jpg" alt="Foto Cokorda Vrindavan Chandra Dasa" />
+        <div class="tekstentang">
+          <h2>Cokorda Vrindavan Chandra Dasa</h2>
+          <p>
+            Ya, benar! Nama lengkap saya adalah Cokorda Vrindavan Chandra Dasa,
+            bisa dipanggil Cok Vrinda. Saya merupakan seorang yang baru belajar
+            tentang pengembangan web. Saat ini saya masih duduk di bangku SMP
+            (tahun 2024). Saya berasal dari Indonesia (karena itu bahasa utama
+            di website ini adalah bahasa Indonesia 🗿). Saya sedang belajar
+            pengembangan web, khususnya di bagian frontend. Begitulah kira-kira.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="skil" data-aos="zoom-in-down" id="skil">
+      <h1 class="judulskil">Skill <span>saya.</span></h1>
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="./logos/logocss.png" />
+          <img src="./logos/logojs.png" />
+          <img src="./logos/pngegg.png" />
+          <img src="./logos/pngwing.com.png" />
+          <img src="./logos/pngegg (3).png" />
+        </div>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="quote">
+              <div class="isiquote">
+                <p>
+                  "Keberhasilan bukan lah milik orang pintar, keberhasilan
+                  adalah milik mereka yang berusaha"
+                </p>
+                <p>
+                  - <i><b>Bj Habibie</b></i> -
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="quote">
+              <div class="isiquote">
+                <p>
+                  "Keberhasilan bukan lah milik orang pintar, keberhasilan
+                  adalah milik mereka yang berusaha"
+                </p>
+                <p>
+                  - <i><b>Bj Habibie</b></i> -
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      feather.replace();
+      AOS.init();
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        }
+      });
+    </script>
+  </body>
+</html>
