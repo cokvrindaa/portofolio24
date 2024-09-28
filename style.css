@@ -184,15 +184,6 @@ span {
   justify-content: center;
   text-align: center;
 }
-.judulskila {
-  font-size: 50px;
-  margin-top: 30px;
-}
-.judulskilb {
-  font-size: 50px;
-  margin-top: 30px;
-  text-align: right;
-}
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -411,5 +402,84 @@ span {
   .tekstentang h2 {
     font-size: 20px;
     margin-top: 10px;
+  }
+
+
+  /* Skil */
+
+  .judulskil{
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    padding: 0  ;
+    overflow: hidden;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+    
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 0px;
+    height: 0px;
+    content: "";
+    z-index: 0;
+  }
+  .logos-slide img {
+    height: 100px;
+    margin: 0 20px;
+    transition: none; /* Nonaktifkan transisi pada mobile */
+  }
+  .logos-slide img:hover {
+    transform: none; /* Nonaktifkan efek membesar saat hover */
+    cursor: pointer;
+  }
+  .logos-slide {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+  }
+
+  .logos-slide img {
+    height: 100px;
+    margin: 0 20px;
+  }
+  
+  .swiper {
+    margin-top: 50px;
+    width: 80%;
+    height: 30%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .quote {
+    display: flex;
+    flex-direction: column; /* Mengatur elemen agar ditumpuk secara vertikal */
+    justify-content: center; /* Mengatur agar elemen berada di tengah secara vertikal */
+    align-items: center;
+  }
+  .quote .isiquote p {
+    font-size: 22px;
+    text-align: center;
   }
 }
