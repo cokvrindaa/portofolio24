@@ -271,22 +271,21 @@ span {
   display: none;
 }
 /* Projek */
-.projek{
+.projek {
   height: 100vh; /* Mengisi seluruh tinggi layar */
   padding: 30px 5%;
   display: flex;
   flex-direction: column; /* Mengatur elemen agar ditumpuk secara vertikal */
   justify-content: center; /* Mengatur agar elemen berada di tengah secara vertikal */
 }
-.projek .judulprojek{
+.projek .judulprojek {
   text-align: center;
   font-size: 60px;
   margin-bottom: 40px;
 }
-.projek .kontainerprojek{
+.projek .kontainerprojek {
   height: 40%;
   width: 100%;
-  padding: 10px;
   display: flex;
   gap: 40px;
 }
@@ -296,38 +295,22 @@ span {
   max-width: 100%;
   object-fit: contain; /* Mempertahankan rasio aspek */
   transition: transform 0.5s ease-in-out;
-
 }
 .projek .kontainerprojek img:hover {
   transform: rotate(2deg); /* Gambar berputar 360 derajat */
 }
-.projek .kontainerprojek .teksprojek{
+.projek .kontainerprojek .teksprojek {
   text-align: justify;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
-.projek .kontainerprojek .teksprojek p{
+.projek .kontainerprojek .teksprojek p {
   font-size: 20px;
 }
-.projek .kontainerprojek .teksprojek h1{
+.projek .kontainerprojek .teksprojek h1 {
   font-size: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Responsiv */
 
@@ -374,6 +357,10 @@ span {
     margin-top: 50px;
     width: 50%;
     height: 30%;
+  }
+  /* Projek */
+  .projek .kontainerprojek img {
+    width: 50%;
   }
 }
 @media (max-width: 500px) {
@@ -463,10 +450,9 @@ span {
     margin-top: 10px;
   }
 
-
   /* Skil */
 
-  .judulskil{
+  .judulskil {
     font-size: 40px;
     margin-top: 30px;
   }
@@ -479,16 +465,15 @@ span {
       transform: translateX(-100%);
     }
   }
-  
+
   .logos {
-    padding: 0  ;
+    padding: 0;
     overflow: hidden;
     background: white;
     white-space: nowrap;
     position: relative;
-    
   }
-  
+
   .logos:before,
   .logos:after {
     position: absolute;
@@ -516,13 +501,13 @@ span {
     height: 100px;
     margin: 0 20px;
   }
-  
+
   .swiper {
     margin-top: 50px;
     width: 80%;
     height: 30%;
   }
-  
+
   .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -540,5 +525,49 @@ span {
   .quote .isiquote p {
     font-size: 22px;
     text-align: center;
+  }
+  /* Projek */
+  .projek {
+    height: 100vh; /* Mengisi seluruh tinggi layar */
+    padding: 30px 10%;
+    display: flex;
+    flex-direction: column; /* Mengatur elemen agar ditumpuk secara vertikal */
+    justify-content: center; /* Mengatur agar elemen berada di tengah secara vertikal */
+  }
+  .projek .judulprojek {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .projek .kontainerprojek {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    gap: 0px;
+    flex-direction: column;
+  }
+  .projek .kontainerprojek img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Mempertahankan rasio aspek */
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 20px;
+  }
+  .projek .kontainerprojek img:hover {
+    transform: rotate(2deg); /* Gambar berputar 360 derajat */
+  }
+  .projek .kontainerprojek .teksprojek {
+    text-align: justify;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .projek .kontainerprojek .teksprojek p {
+    font-size: 18px;
+  }
+  .projek .kontainerprojek .teksprojek h1 {
+    font-size: 30px;
   }
 }
