@@ -82,26 +82,26 @@ span {
   gap: 15px;
 }
 
-.fa-instagram {
+.ikon .fa-instagram {
   transition: 0.4s;
 }
-.fa-instagram:hover {
+.ikon .fa-instagram:hover {
   color: var(--primary);
   transform: scale(1.3);
   cursor: pointer;
 }
-.fa-github {
+.ikon .fa-github {
   transition: 0.4s;
 }
-.fa-tiktok {
+.ikon .fa-tiktok {
   transition: 0.4s;
 }
-.fa-tiktok:hover {
+.ikon .fa-tiktok:hover {
   color: var(--primary);
   transform: scale(1.3);
   cursor: pointer;
 }
-.fa-github:hover {
+.ikon .fa-github:hover {
   color: var(--primary);
   transform: scale(1.3);
   cursor: pointer;
@@ -288,6 +288,7 @@ span {
   width: 100%;
   display: flex;
   gap: 40px;
+  margin-bottom: 150px;
 }
 .projek .kontainerprojek img {
   max-width: 40%;
@@ -295,6 +296,7 @@ span {
   max-width: 100%;
   object-fit: contain; /* Mempertahankan rasio aspek */
   transition: transform 0.5s ease-in-out;
+  border-radius: 20px;
 }
 .projek .kontainerprojek img:hover {
   transform: rotate(2deg); /* Gambar berputar 360 derajat */
@@ -311,7 +313,16 @@ span {
 .projek .kontainerprojek .teksprojek h1 {
   font-size: 50px;
 }
-
+#kebalikan{
+  flex-direction: row-reverse;
+}
+.ikonsumber{
+  display: flex;
+  gap: 20px;
+}
+.ikonsumber i{
+  font-size: 25px;
+}
 /* Responsiv */
 
 /* Laptop Normal */
@@ -569,5 +580,8 @@ span {
   }
   .projek .kontainerprojek .teksprojek h1 {
     font-size: 30px;
+  }
+  #kebalikan{
+    flex-direction: column;
   }
 }
