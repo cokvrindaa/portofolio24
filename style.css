@@ -138,6 +138,7 @@ span {
   justify-content: center; /* Mengatur agar elemen berada di tengah secara vertikal */
   align-items: center; /* Mengatur agar elemen berada di tengah secara horizontal */
   padding: 30px 3%;
+
 }
 
 .judultentang {
@@ -177,6 +178,8 @@ span {
   display: flex;
   flex-direction: column; /* Mengatur elemen agar ditumpuk secara vertikal */
   justify-content: center; /* Mengatur agar elemen berada di tengah secara vertikal */
+  margin-bottom: 100px; /* Memberikan jarak bawah */
+
 }
 .judulskil {
   font-size: 60px;
@@ -277,6 +280,8 @@ span {
   display: flex;
   flex-direction: column; /* Mengatur elemen agar ditumpuk secara vertikal */
   justify-content: center; /* Mengatur agar elemen berada di tengah secara vertikal */
+  margin-top: 500px; /* Memberikan jarak atas */
+
 }
 .projek .judulprojek {
   text-align: center;
@@ -319,9 +324,19 @@ span {
 .ikonsumber{
   display: flex;
   gap: 20px;
+  margin-top: 10px;
 }
-.ikonsumber i{
+.ikonsumber .isiikonsumber i{
   font-size: 25px;
+}
+.ikonsumber .isiikonsumber:hover{
+  color: var(--primary);
+}
+
+.isiikonsumber{
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 /* Responsiv */
 
