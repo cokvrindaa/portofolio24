@@ -325,18 +325,27 @@ span {
   display: flex;
   gap: 20px;
   margin-top: 10px;
+  
 }
 .ikonsumber .isiikonsumber i{
   font-size: 25px;
+  color: black;
 }
 .ikonsumber .isiikonsumber:hover{
   color: var(--primary);
+  cursor: pointer;
 }
+.ikonsumber .isiikonsumber i:hover{
+  color: var(--primary);
+  cursor: pointer;
+}
+
 
 .isiikonsumber{
   display: flex;
   align-items: center;
   gap: 5px;
+  color: black;
 }
 /* Responsiv */
 
@@ -477,7 +486,9 @@ span {
   }
 
   /* Skil */
-
+  .skil{
+    margin-bottom: 0px;
+  }
   .judulskil {
     font-size: 40px;
     margin-top: 30px;
@@ -559,6 +570,7 @@ span {
     display: flex;
     flex-direction: column; /* Mengatur elemen agar ditumpuk secara vertikal */
     justify-content: center; /* Mengatur agar elemen berada di tengah secara vertikal */
+    margin-top: 1000px;
   }
   .projek .judulprojek {
     text-align: center;
@@ -566,7 +578,7 @@ span {
     margin-bottom: 20px;
   }
   .projek .kontainerprojek {
-    height: 40%;
+    height: 80%;
     width: 100%;
     display: flex;
     padding: 0px;
