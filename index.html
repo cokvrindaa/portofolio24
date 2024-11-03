@@ -19,10 +19,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
-  <body>
+  <body id="body">
     tes di linuxx
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
@@ -33,6 +34,7 @@
         <a href="#beranda">Beranda</a>
         <a href="#tentang">Tentang</a>
         <a href="#skil">Skil</a>
+        <a href="#projek">Projek</a>
         <i data-feather="moon" id="modegelap" onclick="klikmodegelap()"></i>
         <i data-feather="sun" id="modeterang" onclick="klikmodeterang()"></i>
       </div>
@@ -89,7 +91,7 @@
     <!-- Skills -->
     <div class="skil" data-aos="zoom-in-down" id="skil">
       <h1 class="judulskil">Skill <span>saya.</span></h1>
-      <div class="logos">
+      <div class="logos" id="logos">
         <div class="logos-slide">
           <img src="./logos/logocss.png" />
           <img src="./logos/logojs.png" />
@@ -100,9 +102,9 @@
       </div>
 
       <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="quote">
+        <div class="swiper-wrapper" id="swiper-wrapper">
+          <div class="swiper-slide" id="swiper-slide">
+            <div class="quote" id="quote">
               <div class="isiquote">
                 <p>
                   "Keberhasilan bukan lah milik orang pintar, keberhasilan
@@ -115,12 +117,14 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-          
-          <div class="swiper-slide">
-            <div class="quote">
+
+          <div class="swiper-slide" id="swiper-slide">
+            <div class="quote" id="quote">
               <div class="isiquote">
                 <p>
-                  "Satu-satunya cara untuk melakukan pekerjaan besar adalah dengan mencintai apa yang kamu lakukan. Jika belum menemukannya, teruslah mencari. Jangan pernah menyerah."
+                  "Satu-satunya cara untuk melakukan pekerjaan besar adalah
+                  dengan mencintai apa yang kamu lakukan. Jika belum
+                  menemukannya, teruslah mencari. Jangan pernah menyerah."
                 </p>
                 <p>
                   - <i><b>Steve Job</b></i> -
@@ -130,11 +134,12 @@
             <div class="swiper-pagination"></div>
           </div>
 
-          <div class="swiper-slide">
-            <div class="quote">
+          <div class="swiper-slide" id="swiper-slide">
+            <div class="quote" id="quote">
               <div class="isiquote">
                 <p>
-                  "Mimpi bukan untuk ditunggu sampai jadi nyata; mimpi itu untuk dikejar, diperjuangkan, sampai kita yang membuatnya nyata."
+                  "Mimpi bukan untuk ditunggu sampai jadi nyata; mimpi itu untuk
+                  dikejar, diperjuangkan, sampai kita yang membuatnya nyata."
                 </p>
                 <p>
                   - <i><b>Chat GPT</b></i> -
@@ -144,10 +149,9 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
-        
       </div>
     </div>
-    <div class="projek" data-aos="zoom-in-down">
+    <div class="projek" data-aos="zoom-in-down" id="projek">
       <h1 class="judulskil">Project <span>saya.</span></h1>
       <div class="kontainerkotak">
         <div class="kotak" data-aos="zoom-in-down" id="kebalikan">
@@ -196,7 +200,12 @@
           <div class="isikotak">
             <h1>Password <span>Generator</span></h1>
             <p>
-              Passoword Generator adalah website yang dapat mengenerate password, kalian bisa menentukan seberapa panjang passoword tersebut, dan seberapa sulit password tersebut, password generator menggunakan teknologi pure javascript, pure css, dan html. Oh ya disini saya menggunakan libary javascript, untuk mengcopy paste teks.
+              Passoword Generator adalah website yang dapat mengenerate
+              password, kalian bisa menentukan seberapa panjang passoword
+              tersebut, dan seberapa sulit password tersebut, password generator
+              menggunakan teknologi pure javascript, pure css, dan html. Oh ya
+              disini saya menggunakan libary javascript, untuk mengcopy paste
+              teks.
             </p>
             <div class="logolink">
               <a href="https://github.com/cokvrindaa/Password-Generator">
@@ -220,7 +229,11 @@
           <div class="isikotak">
             <h1>Cek <span>Khodam</span></h1>
             <p>
-              Projek ini dibuat karena fomo doang wkwkwk, webiste cek khodam ini viral di tiktok pada masanya (tahun 2023). Sebenarnya logika dari website ini sangat sederhana, yaitu dengan cara menyimpan beberapa kata random di suatu variabel, lalu jika tombol di klik maka, kata kata yang ada di variabel tersebut dikeluarkan secara acak
+              Projek ini dibuat karena fomo doang wkwkwk, webiste cek khodam ini
+              viral di tiktok pada masanya (tahun 2023). Sebenarnya logika dari
+              website ini sangat sederhana, yaitu dengan cara menyimpan beberapa
+              kata random di suatu variabel, lalu jika tombol di klik maka, kata
+              kata yang ada di variabel tersebut dikeluarkan secara acak
             </p>
             <div class="logolink">
               <a href="https://github.com/cokvrindaa/Chek-Khodam">
@@ -238,15 +251,33 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
     <script>
+      const navbar = document.getElementById("navbar");
+      const body = document.body;
+      const logos = document.getElementById("logos");
+      const swiperWrapper = document.getElementById("swiper-wrapper"); // Ganti `swiper-slide` menjadi `swiper-wrapper`
+      const quotes = document.querySelectorAll(".quote"); // Ambil semua elemen dengan kelas `quote`
+      const swiperSlides = document.querySelectorAll(".swiper-slide"); // Ambil semua elemen swiper-slide
+
+      function klikmodegelap() {
+        body.classList.add("styledarkmode");
+        navbar.classList.add("styledarkmode");
+        logos.classList.add("styledarkmode");
+        swiperWrapper.classList.add("styledarkmode");
+        quotes.forEach((quote) => {
+          quote.classList.add("styledarkmode");
+        });
+        swiperSlides.forEach((slide) => {
+          slide.classList.add("styledarkmode"); // Tambahkan class styledarkmode ke setiap slide
+        });
+      }
+
+      // Inisialisasi library tambahan
       feather.replace();
       AOS.init();
       var swiper = new Swiper(".mySwiper", {

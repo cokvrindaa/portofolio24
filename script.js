@@ -21,3 +21,6 @@ var copy1 = document.querySelector(".logos-slide1").cloneNode(true);
 document.querySelector(".logos1").appendChild(copy1);
 // Slider js
 
+
+
+

@@ -4,6 +4,9 @@
   padding: 0;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* Font Popins */
 body {
   font-family: "Poppins", sans-serif;
@@ -47,6 +50,7 @@ span {
   color: black;
   padding: 10px;
 }
+
 .navbar .navbar-tengah a:hover {
   cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>'),
     pointer;
@@ -342,15 +346,23 @@ span {
   color: black;
   text-decoration: none;
 }
+.logolinkgit {
+  transition: 0.4s;
+}
+.logolinkweb {
+  transition: 0.4s;
+}
 .logolinkgit:hover {
   color: var(--primary);
   cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>'),
     pointer;
+  transform: scale(1.1);
 }
 .logolinkweb:hover {
   color: var(--primary);
   cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>'),
     pointer;
+  transform: scale(1.05);
 }
 .logolinkgit p {
   font-size: 18px;
@@ -372,6 +384,54 @@ span {
 .logolinkweb i {
   font-size: 28px;
 }
+
+/* Dark Mode  */
+body.styledarkmode {
+  background-color: black;
+  color: white;
+}
+.navbar.styledarkmode {
+  color: white;
+  background-color: black;
+}
+.navbar.styledarkmode a {
+  color: white;
+  background-color: black;
+}
+.logos.styledarkmode {
+  background-color: black;
+}
+
+/* Khusus untuk elemen quote */
+.styledarkmode .quote,
+.styledarkmode .isiquote,
+.styledarkmode .swiper-slide {
+  background-color: rgba(0, 0, 0, 0.7); /* Warna hitam dengan transparansi */
+  color: #ffffff;
+}
+
+.styledarkmode .swiper-slide {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Pastikan area swiper-slide juga hitam */
+}
+
+/* Khusus untuk ikon pada mode gelap */
+.styledarkmode .logolinkgit,
+.styledarkmode .logolinkweb {
+  color: #ffffff;
+}
+
+.styledarkmode .logos:before {
+  background: none;
+}
+.styledarkmode .logos:after {
+  background: none;
+}
+
 /* Responsiv */
 
 /* Laptop Normal */
