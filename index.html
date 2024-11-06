@@ -51,7 +51,13 @@
       </div>
     </nav>
     <!-- Beranda -->
-    <div class="beranda" id="beranda" data-aos="zoom-in-down">
+    <div
+      class="beranda"
+      id="beranda"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      
       <div class="porfil">
         <img src="foto.jpg" alt="" class="foto" />
         <div class="teks">
@@ -70,7 +76,8 @@
       </div>
     </div>
     <!-- Tentang -->
-    <div class="tentang" id="tentang" data-aos="zoom-in-down">
+    <div class="tentang" id="tentang" data-aos="zoom-in-down"       data-aos-duration="700"
+    >
       <h1 class="judultentang">Tentang <span>saya.</span></h1>
       <div class="isitentang">
         <img src="foto.jpg" alt="Foto Cokorda Vrindavan Chandra Dasa" />
@@ -89,7 +96,7 @@
     </div>
 
     <!-- Skills -->
-    <div class="skil" data-aos="zoom-in-down" id="skil">
+    <div class="skil" data-aos="zoom-in-down"  id="skil"  data-aos-duration="700">
       <h1 class="judulskil">Skill <span>saya.</span></h1>
       <div class="logos" id="logos">
         <div class="logos-slide">
@@ -151,10 +158,10 @@
         </div>
       </div>
     </div>
-    <div class="projek" data-aos="zoom-in-down" id="projek">
+    <div class="projek" data-aos="zoom-in-down" id="projek"  data-aos-duration="700">
       <h1 class="judulskil">Project <span>saya.</span></h1>
       <div class="kontainerkotak">
-        <div class="kotak" data-aos="zoom-in-down" id="kebalikan">
+        <div class="kotak" data-aos="zoom-in-down"  data-aos-duration="700" id="kebalikan">
           <img src="./fotoprojek/youtubekw.png" alt="" />
           <div class="isikotak">
             <h1>Youtube <span>kw</span></h1>
@@ -167,7 +174,7 @@
             </p>
           </div>
         </div>
-        <div class="kotak" data-aos="zoom-in-down">
+        <div class="kotak" data-aos="zoom-in-down"  data-aos-duration="700">
           <img src="./fotoprojek/ohtheneptunewebsite.png" alt="" />
           <div class="isikotak">
             <h1>Oh The Neptune Web<span>site.</span></h1>
@@ -195,7 +202,7 @@
           </div>
         </div>
 
-        <div class="kotak" data-aos="zoom-in-down" id="kebalikan">
+        <div class="kotak" data-aos="zoom-in-down"  data-aos-duration="700" id="kebalikan">
           <img src="./fotoprojek/passgenrator.png" alt="" />
           <div class="isikotak">
             <h1>Password <span>Generator</span></h1>
@@ -224,7 +231,7 @@
           </div>
         </div>
 
-        <div class="kotak" data-aos="zoom-in-down">
+        <div class="kotak" data-aos="zoom-in-down"  data-aos-duration="700">
           <img src="./fotoprojek/cek kodam.png" alt="" />
           <div class="isikotak">
             <h1>Cek <span>Khodam</span></h1>
@@ -243,6 +250,32 @@
                 </div>
               </a>
               <a href="https://cekkhodam-online.netlify.app/">
+                <div class="logolinkweb">
+                  <i class="fa-solid fa-globe"></i>
+                  <p>Website</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="kotak" data-aos="zoom-in-down" id="kebalikan"  data-aos-duration="700">
+          <img src="./fotoprojek/qrcodegenerator.png" alt="" />
+          <div class="isikotak">
+            <h1>QR Code <span>Generator</span></h1>
+            <p>
+              Projek QR Generator adalah projek yang berfungsi sebgai konverter
+              dari suatu teks atau link menjadi suatu qr code. Projek ini
+              menggunakan tailwindcss, javascript, menggunakan libary filesaver,
+              menggunakan API qr server.
+            </p>
+            <div class="logolink">
+              <a href="https://github.com/cokvrindaa/Simple-QR-Code-Generator">
+                <div class="logolinkgit">
+                  <i class="fa-brands fa-github"></i>
+                  <p>Github</p>
+                </div>
+              </a>
+              <a href="https://supersimpleqrcodegenerator.netlify.app/">
                 <div class="logolinkweb">
                   <i class="fa-solid fa-globe"></i>
                   <p>Website</p>
@@ -274,6 +307,18 @@
         });
         swiperSlides.forEach((slide) => {
           slide.classList.add("styledarkmode"); // Tambahkan class styledarkmode ke setiap slide
+        });
+      }
+      function klikmodeterang() {
+        body.classList.remove("styledarkmode");
+        navbar.classList.remove("styledarkmode");
+        logos.classList.remove("styledarkmode");
+        swiperWrapper.classList.remove("styledarkmode");
+        quotes.forEach((quote) => {
+          quote.classList.remove("styledarkmode");
+        });
+        swiperSlides.forEach((slide) => {
+          slide.classList.remove("styledarkmode"); // Tambahkan class styledarkmode ke setiap slide
         });
       }
 
