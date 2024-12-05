@@ -38,17 +38,7 @@
         <i data-feather="moon" id="modegelap" onclick="klikmodegelap()"></i>
         <i data-feather="sun" id="modeterang" onclick="klikmodeterang()"></i>
       </div>
-      <i data-feather="menu" id="menu"></i>
-    </nav>
-    <nav class="dropdown" id="dropdown">
-      <div class="isidropdown">
-        <a href="index.html">Pengertian</a>
-        <a href="Transprortasi.html">Transprotasi</a>
-        <div class="isidropdown-mode">
-          <i data-feather="moon" id="modegelap" onclick="klikmodegelap()"></i>
-          <i data-feather="sun" onclick="klikmodeterang()"></i>
-        </div>
-      </div>
+      <i data-feather="menu" id="menu" onclick="tampildropdown()"></i>
     </nav>
     <!-- Beranda -->
     <div
@@ -57,7 +47,6 @@
       data-aos="fade-up"
       data-aos-duration="2000"
     >
-      
       <div class="porfil">
         <img src="foto.jpg" alt="" class="foto" />
         <div class="teks">
@@ -76,7 +65,11 @@
       </div>
     </div>
     <!-- Tentang -->
-    <div class="tentang" id="tentang" data-aos="zoom-in-down"       data-aos-duration="700"
+    <div
+      class="tentang"
+      id="tentang"
+      data-aos="zoom-in-down"
+      data-aos-duration="700"
     >
       <h1 class="judultentang">Tentang <span>saya.</span></h1>
       <div class="isitentang">
@@ -96,7 +89,7 @@
     </div>
 
     <!-- Skills -->
-    <div class="skil" data-aos="zoom-in-down"  id="skil"  data-aos-duration="700">
+    <div class="skil" data-aos="zoom-in-down" id="skil" data-aos-duration="700">
       <h1 class="judulskil">Skill <span>saya.</span></h1>
       <div class="logos" id="logos">
         <div class="logos-slide">
@@ -158,10 +151,20 @@
         </div>
       </div>
     </div>
-    <div class="projek" data-aos="zoom-in-down" id="projek"  data-aos-duration="700">
+    <div
+      class="projek"
+      data-aos="zoom-in-down"
+      id="projek"
+      data-aos-duration="700"
+    >
       <h1 class="judulskil">Project <span>saya.</span></h1>
       <div class="kontainerkotak">
-        <div class="kotak" data-aos="zoom-in-down"  data-aos-duration="700" id="kebalikan">
+        <div
+          class="kotak"
+          data-aos="zoom-in-down"
+          data-aos-duration="700"
+          id="kebalikan"
+        >
           <img src="./fotoprojek/youtubekw.png" alt="" />
           <div class="isikotak">
             <h1>Youtube <span>kw</span></h1>
@@ -174,7 +177,7 @@
             </p>
           </div>
         </div>
-        <div class="kotak" data-aos="zoom-in-down"  data-aos-duration="700">
+        <div class="kotak" data-aos="zoom-in-down" data-aos-duration="700">
           <img src="./fotoprojek/ohtheneptunewebsite.png" alt="" />
           <div class="isikotak">
             <h1>Oh The Neptune Web<span>site.</span></h1>
@@ -202,7 +205,12 @@
           </div>
         </div>
 
-        <div class="kotak" data-aos="zoom-in-down"  data-aos-duration="700" id="kebalikan">
+        <div
+          class="kotak"
+          data-aos="zoom-in-down"
+          data-aos-duration="700"
+          id="kebalikan"
+        >
           <img src="./fotoprojek/passgenrator.png" alt="" />
           <div class="isikotak">
             <h1>Password <span>Generator</span></h1>
@@ -231,7 +239,7 @@
           </div>
         </div>
 
-        <div class="kotak" data-aos="zoom-in-down"  data-aos-duration="700">
+        <div class="kotak" data-aos="zoom-in-down" data-aos-duration="700">
           <img src="./fotoprojek/cek kodam.png" alt="" />
           <div class="isikotak">
             <h1>Cek <span>Khodam</span></h1>
@@ -258,7 +266,12 @@
             </div>
           </div>
         </div>
-        <div class="kotak" data-aos="zoom-in-down" id="kebalikan"  data-aos-duration="700">
+        <div
+          class="kotak"
+          data-aos="zoom-in-down"
+          id="kebalikan"
+          data-aos-duration="700"
+        >
           <img src="./fotoprojek/qrcodegenerator.png" alt="" />
           <div class="isikotak">
             <h1>QR Code <span>Generator</span></h1>
@@ -267,6 +280,34 @@
               dari suatu teks atau link menjadi suatu qr code. Projek ini
               menggunakan tailwindcss, javascript, menggunakan libary filesaver,
               menggunakan API qr server.
+            </p>
+            <div class="logolink">
+              <a href="https://github.com/cokvrindaa/Simple-QR-Code-Generator">
+                <div class="logolinkgit">
+                  <i class="fa-brands fa-github"></i>
+                  <p>Github</p>
+                </div>
+              </a>
+              <a href="https://supersimpleqrcodegenerator.netlify.app/">
+                <div class="logolinkweb">
+                  <i class="fa-solid fa-globe"></i>
+                  <p>Website</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="kotak" data-aos="zoom-in-down" data-aos-duration="700">
+          <img src="./fotoprojek/ledcontrol.jpg" alt="" />
+          <div class="isikotak">
+            <h1>ESP 32 X <span>WEB</span></h1>
+            <p>
+              Projek ini adalah projek iot (internet of think) yang
+              mengintegrasikan website dengan ESP 32. Projek ini menggunakan
+              local webserver, sehingga hanya yangg menggunakan wifi ternetenu
+              saja yang bisa mengkontrol led. Untuk sementara projek ini hanya
+              untuk kontrol led saja, mungkin ke depanya bisa lebih banyak.
             </p>
             <div class="logolink">
               <a href="https://github.com/cokvrindaa/Simple-QR-Code-Generator">

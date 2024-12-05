@@ -34,7 +34,6 @@ span {
   background-color: white;
 }
 
-
 .navbar .navbar-logo {
   font-weight: bold;
   font-size: 35px;
@@ -52,10 +51,10 @@ span {
   color: black;
   padding: 10px;
 }
-#modegelap:hover{
+#modegelap:hover {
   color: var(--primary);
 }
-#modeterang:hover{
+#modeterang:hover {
   color: var(--primary);
 }
 .navbar .navbar-tengah a:hover {
@@ -427,7 +426,6 @@ body.styledarkmode {
   ); /* Pastikan area swiper-slide juga hitam */
 }
 
-
 /* Khusus untuk ikon pada mode gelap */
 .styledarkmode .logolinkgit,
 .styledarkmode .logolinkweb {
@@ -499,6 +497,21 @@ body.styledarkmode {
 @media (max-width: 500px) {
   /* Navbar */
   .navbar .navbar-tengah a {
+    display: none;
+  }
+  /* Navbar */
+  .navbar {
+    padding: 20px 5%;
+    display: flex;
+  }
+
+  #menu {
+    display: block;
+  }
+  #modegelap {
+    display: none;
+  }
+  #modeterang {
     display: none;
   }
   /* Beranda */
