@@ -451,7 +451,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 600px; /* Batasi lebar form */
+  max-width: 800px; /* Batasi lebar form */
   padding: 20px;
 
   border-radius: 8px;
@@ -568,6 +568,9 @@ button {
   }
   #modeterang {
     display: none;
+  }
+  .beranda {
+    margin-top: 40px;
   }
   /* Beranda */
   .beranda .porfil {
@@ -731,12 +734,13 @@ button {
   }
   /* Projek */
   .projek {
-    height: 600vh; /* Mengisi seluruh tinggi layar */
+    height: 590vh; /* Mengisi seluruh tinggi layar */
     display: flex;
     flex-direction: column; /* Mengatur elemen agar ditumpuk secara vertikal */
     /* justify-content: center; Mengatur agar elemen berada di tengah secara vertikal */
     /* align-items: center; Mengatur agar elemen berada di tengah secara horizontal */
     padding: 30px 10%;
+    margin-bottom: 0px;
   }
   .projek .kontainerkotak {
     display: flex;
@@ -775,9 +779,6 @@ button {
     padding: 20px;
   }
 
-  .judulskil {
-    font-size: 1.5rem;
-  }
 
   form {
     padding: 15px;
