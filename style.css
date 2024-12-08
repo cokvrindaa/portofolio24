@@ -740,7 +740,7 @@ button {
     /* justify-content: center; Mengatur agar elemen berada di tengah secara vertikal */
     /* align-items: center; Mengatur agar elemen berada di tengah secara horizontal */
     padding: 30px 10%;
-    margin-bottom: 0px;
+    margin-bottom: -150px;
   }
   .projek .kontainerkotak {
     display: flex;
