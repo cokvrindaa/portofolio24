@@ -445,6 +445,8 @@ body.styledarkmode {
   flex-direction: column;
   align-items: center;
   padding: 30px 4%;
+  margin-top: 0px;
+
 }
 
 form {
@@ -546,6 +548,9 @@ button {
   }
   .isikotak h1 {
     font-size: 40px;
+  }
+  .kontak{
+    margin-top: 0px;
   }
 }
 
