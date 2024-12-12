@@ -440,7 +440,7 @@ body.styledarkmode {
 }
 
 .kontak {
-  height: 50vh; /* Ubah dari 400vh agar lebih responsif */
+  height: 65vh; /* Ubah dari 400vh agar lebih responsif */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -777,10 +777,16 @@ button {
 @media (max-width: 768px) {
   .kontak {
     padding: 20px;
+    
   }
 
 
   form {
     padding: 15px;
+  }
+}
+@media (min-height: 810px) {
+  .kontak {
+    margin-top: -640px;
   }
 }

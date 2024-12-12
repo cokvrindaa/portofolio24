@@ -329,12 +329,13 @@
     </div>
     <div class="kontak" data-aos="zoom-in-down" data-aos-duration="700">
       <h1 class="judulskil">Kontak <span>saya</span></h1>
-      <form action="">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="4c084ce9-ac00-47c1-a768-51988f9e08a5">
         <label for="nama">Nama: </label>
-        <input type="text" id="nama" name="nama" placeholder="masukinn namaa kamuu dongg..">
+        <input type="text" id="nama" name="name" placeholder="masukinn namaa kamuu dongg..">
         <label for="pesan">Pesan: </label>
-        <textarea id="pesam" name="pesam" rows="4" required placeholder="pesann nyaa apaa nih..."></textarea>
-        <button type="submit">Kirim</button>
+        <textarea id="pesam"  name="message" rows="4" required placeholder="pesann nyaa apaa nih..."></textarea>
+        <button type="submit" name="submit">Kirim</button>
       </form>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
