@@ -23,4 +23,3 @@ document.querySelector(".logos1").appendChild(copy1);
 
 
 
-

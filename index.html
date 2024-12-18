@@ -35,11 +35,26 @@
         <a href="#tentang">Tentang</a>
         <a href="#skil">Skil</a>
         <a href="#projek">Projek</a>
+        <a href="#kontak">Kontak</a>
         <i data-feather="moon" id="modegelap" onclick="klikmodegelap()"></i>
         <i data-feather="sun" id="modeterang" onclick="klikmodeterang()"></i>
       </div>
-      <i data-feather="menu" id="menu" onclick="tampildropdown()"></i>
+      <i data-feather="menu" id="menu" onclick="toggleDropdown()"></i>
     </nav>
+    <nav class="dropdown" id="dropdown">
+      <div class="isidropdown">
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#skil">Skil</a>
+        <a href="#projek">Projek</a>
+        <a href="#kontak">Kontak</a>
+        <div class="isidropdown-mode">
+          <i data-feather="moon" onclick="klikmodegelap()"></i>
+          <i data-feather="sun" onclick="klikmodeterang()"></i>
+        </div>
+      </div>
+    </nav>
+
     <!-- Beranda -->
     <div
       class="beranda"
@@ -73,7 +88,7 @@
     >
       <h1 class="judultentang">Tentang <span>saya.</span></h1>
       <div class="isitentang">
-        <img src="foto.jpg" alt="Foto Cokorda Vrindavan Chandra Dasa" />
+        <img src="foto2.jpg" alt="Foto Cokorda Vrindavan Chandra Dasa" />
         <div class="tekstentang">
           <h2>Cokorda Vrindavan Chandra Dasa</h2>
           <p>
@@ -327,54 +342,43 @@
         </div>
       </div>
     </div>
-    <div class="kontak" data-aos="zoom-in-down" data-aos-duration="700">
+    <div
+      class="kontak"
+      data-aos="zoom-in-down"
+      data-aos-duration="700"
+      id="kontak"
+    >
       <h1 class="judulskil">Kontak <span>saya</span></h1>
       <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="4c084ce9-ac00-47c1-a768-51988f9e08a5">
-        <label for="nama">Nama: </label>
-        <input type="text" id="nama" name="name" placeholder="masukinn namaa kamuu dongg..">
-        <label for="pesan">Pesan: </label>
-        <textarea id="pesam"  name="message" rows="4" required placeholder="pesann nyaa apaa nih..."></textarea>
+        <input
+          type="hidden"
+          name="access_key"
+          value="4c084ce9-ac00-47c1-a768-51988f9e08a5"
+        />
+        <p for="nama">Nama: </p>
+        <input
+          type="text"
+          id="nama"
+          name="name"
+          placeholder="masukinn namaa kamuu dongg.."
+        />
+        <p for="pesan">Pesan: </p>
+        <textarea
+          id="pesam"
+          name="message"
+          rows="4"
+          required
+          placeholder="pesann nyaa apaa nih..."
+        ></textarea>
         <button type="submit" name="submit">Kirim</button>
       </form>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
     <script>
-      const navbar = document.getElementById("navbar");
-      const body = document.body;
-      const logos = document.getElementById("logos");
-      const swiperWrapper = document.getElementById("swiper-wrapper"); // Ganti `swiper-slide` menjadi `swiper-wrapper`
-      const quotes = document.querySelectorAll(".quote"); // Ambil semua elemen dengan kelas `quote`
-      const swiperSlides = document.querySelectorAll(".swiper-slide"); // Ambil semua elemen swiper-slide
-
-      function klikmodegelap() {
-        body.classList.add("styledarkmode");
-        navbar.classList.add("styledarkmode");
-        logos.classList.add("styledarkmode");
-        swiperWrapper.classList.add("styledarkmode");
-        quotes.forEach((quote) => {
-          quote.classList.add("styledarkmode");
-        });
-        swiperSlides.forEach((slide) => {
-          slide.classList.add("styledarkmode"); // Tambahkan class styledarkmode ke setiap slide
-        });
-      }
-      function klikmodeterang() {
-        body.classList.remove("styledarkmode");
-        navbar.classList.remove("styledarkmode");
-        logos.classList.remove("styledarkmode");
-        swiperWrapper.classList.remove("styledarkmode");
-        quotes.forEach((quote) => {
-          quote.classList.remove("styledarkmode");
-        });
-        swiperSlides.forEach((slide) => {
-          slide.classList.remove("styledarkmode"); // Tambahkan class styledarkmode ke setiap slide
-        });
-      }
+      feather.replace();
 
       // Inisialisasi library tambahan
-      feather.replace();
       AOS.init();
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
@@ -388,6 +392,51 @@
           clickable: true,
         },
       });
+      const navbar = document.getElementById("navbar");
+      const body = document.body;
+      const logos = document.getElementById("logos");
+      const swiperWrapper = document.getElementById("swiper-wrapper"); // Ganti `swiper-slide` menjadi `swiper-wrapper`
+      const quotes = document.querySelectorAll(".quote"); // Ambil semua elemen dengan kelas `quote`
+      const swiperSlides = document.querySelectorAll(".swiper-slide"); // Ambil semua elemen swiper-slide
+      const menu = document.getElementById("menu");
+      const dropdown = document.getElementById("dropdown");
+      const a = document.querySelectorAll("a");
+      const isidropdown = document.getElementById("isidropdown");
+      menu.addEventListener("click", function () {
+        if (dropdown.classList.contains("show")) {
+          dropdown.classList.remove("show");
+        } else {
+          dropdown.classList.add("show");
+        }
+      });
+
+      function klikmodegelap() {
+        body.classList.add("styledarkmode");
+        navbar.classList.add("styledarkmode");
+        logos.classList.add("styledarkmode");
+        swiperWrapper.classList.add("styledarkmode");
+        dropdown.classList.add("styledarkmode");
+        quotes.forEach((quote) => {
+          quote.classList.add("styledarkmode");
+        });
+        swiperSlides.forEach((slide) => {
+          slide.classList.add("styledarkmode"); // Tambahkan class styledarkmode ke setiap slide
+        });
+      }
+      function klikmodeterang() {
+        body.classList.remove("styledarkmode");
+        navbar.classList.remove("styledarkmode");
+        logos.classList.remove("styledarkmode");
+        swiperWrapper.classList.remove("styledarkmode");
+        dropdown.classList.remove("styledarkmode");
+
+        quotes.forEach((quote) => {
+          quote.classList.remove("styledarkmode");
+        });
+        swiperSlides.forEach((slide) => {
+          slide.classList.remove("styledarkmode"); // Tambahkan class styledarkmode ke setiap slide
+        });
+      }
     </script>
   </body>
 </html>
